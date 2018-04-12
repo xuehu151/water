@@ -1,0 +1,625 @@
+.screen-wraper{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url("../../assets/image/screen_bg.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top:0;
+}
+
+/*电子时钟*/
+.screen-clock{
+  position: absolute;
+  left:37.1%;
+  top:7.5%;
+  width:25.8%;
+  height: 3.3%;
+  background: rgba(4,144,217,.25);
+  text-align: center;
+  color: #ced7df;
+  border-bottom: 1px solid #005b7e;
+  z-index: 10;
+}
+
+.screen-clock span{
+  font-size: 16px;
+}
+
+.screen-clock:before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 7%;
+  height: 100%;
+  transform: skewX(45deg);
+  left: -3.3%;
+  background:#073865;
+  border-left: 1px solid #005b7e;
+  top:0;
+}
+
+.screen-clock:after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 7%;
+  height: 100%;
+  transform: skewX(-45deg);
+  right: -3.3%;
+  top:0;
+  background:#073865;
+  border-right: 1px solid #005b7e;
+}
+
+.screen-middle{
+  width: 100%;
+  height:52.7%;
+  margin-top: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/*村庄设备故障等信息表*/
+.screen-middle > .screen-villages-info{
+  width: 28.6%;
+  height: 37.4%;
+  background:url("../../assets/image/screen_card02.png") no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+.screen-villages-info > .screen-villages-info-list{
+  width: 92%;
+  height: 100%;
+  margin-left: 3%;
+  background: url(../../assets/image/portal_light.png) no-repeat 10px 2px,
+          url(../../assets/image/portal_light.png) no-repeat 200px bottom;
+}
+
+.screen-villages-info-list > .screen-villages-info-item{
+  width: 100%;
+  height: 33%;
+  overflow: hidden;
+}
+
+.screen-villages-info-list > li.village-item-underline{
+  border-bottom: 1px solid #586993;
+}
+
+.screen-villages-info-list > .screen-villages-info-item > h4{
+  color: #ced7df;
+  height: 100%;
+  width: 30%;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  overflow: hidden;
+  line-height: 300%;
+  position: relative;
+  float: left;
+}
+
+.screen-villages-info-item > h4 > span{
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background:#114686;
+  text-align: center;
+  line-height: 26px;
+  left:0;
+  top:28%;
+}
+
+/*.screen-villages-info-list > li > h4 > span.icon-tit{
+  background:#114686 url("../../assets/image/portal_ico_01.png") no-repeat center;
+}*/
+
+.screen-villages-info-item > h4 > i {
+  font-style: normal;
+  font-size: 14px;
+  margin-left: 10px;
+  position: absolute;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  overflow: hidden;
+  width: 70%;
+  height: 80%;
+  float: left;
+  top:20%;
+  left:20%;
+}
+
+.screen-villages-info-item > h4 > b{
+  display: block;
+  width: 1px;
+  height: 70%;
+  right: 0;
+  top:15%;
+  position: absolute;
+  background-color: #576d9c;
+}
+
+.screen-villages-info-item > .villages-info-num{
+  width: 69%;
+  height: 100%;
+  float: right;
+  overflow: hidden;
+}
+.villages-info-num > li{
+  display: inline-block;
+  text-align: center;
+  width: 23.5%;
+  margin-top: 5%;
+}
+.villages-info-num > li> dl{
+  width: 100%;
+  height: 100%;
+}
+
+.villages-info-num > li dt{
+  color: #fff;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.villages-info-num > li dd{
+  color: #cd9e2b;
+  font-size: 15px;
+}
+@media screen and (max-width : 1366px){
+  .villages-info-num > li dd{
+    font-size: 8px;
+  }
+  .villages-info-num > li dt{
+    font-size: 8px;
+  }
+  .screen-villages-info-item > h4 > span{
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+  }
+  .screen-villages-info-item > h4 > i{
+    font-size: 8px;
+  }
+  .screen-clock span{
+    font-size: 8px;
+  }
+}
+
+/*.screen-villages-info > .screen-village-list{
+  width: 95%;
+  height: 100%;
+  border-top: 2px solid #094470;
+  border-bottom: 2px solid #094470;
+  float: left;
+}
+
+.screen-villages-info > .village-info-xiushi{
+  width: 4%;
+  height: 78%;
+  margin-top: 4%;
+  border-right: 2px solid #094470;
+  float: left;
+  position: relative;
+}
+
+.village-info-xiushi:before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 15%;
+  left:-50%;
+  top:-14%;
+  transform: skewX(45deg);
+  position: absolute;
+  border-right: 2px solid #094470;
+}
+
+.village-info-xiushi:after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 16%;
+  left:-48%;
+  bottom:-15%;
+  transform: skewX(-45deg);
+  position: absolute;
+  border-right: 2px solid #094470;
+}*/
+
+/*饼状图*/
+.screen-middle > .screen-device-info{
+  width: 27.4%;
+  height: 58.2%;
+  margin-top: 18px;
+  background: url("../../assets/image/screen_card01.png") no-repeat left top;
+  background-size: 100% 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.screen-middle > .screen-device-info > .device-info-border{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left:0;
+  top:0;
+  background:url('../../assets/image/portal_light.png') no-repeat 25% 1px,
+  url('../../assets/image/portal_light.png') no-repeat 60% bottom;
+}
+
+.screen-device-info > h2{
+  width: 18%;
+  height: 100%;
+  overflow: hidden;
+  float: left;
+}
+
+.screen-device-info > h2 > img{
+  width: 50%;
+  height: 64%;
+  margin-left: 34%;
+  margin-top: 40%;
+  float: left;
+}
+
+.screen-device-info > h2 > span{
+  display: block;
+  width: 2px;
+  height: 80%;
+  float: right;
+  background: #096a9c;
+  margin-top: 35%;
+}
+
+.screen-device-info > .state-scale-charts{
+  float: left;
+  width: 82%;
+  height: 100%;
+  position: relative;
+}
+
+.screen-device-info > .state-scale-charts > .charts-center{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+}
+
+.screen-device-info > .state-scale-charts > .state-charts-main{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+
+/*3d组态banner*/
+.screen-middle > .screen-3d-banner{
+  width:29%;
+  height: 98%;
+  position: absolute;
+  right: 1%;
+  top:1%;
+}
+
+.screen-middle > .screen-3d-banner > .screen-3d-banner-border{
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/image/portal_frame_01.png") 1px 1px no-repeat,
+  url("../../assets/image/portal_frame_02.png") calc(100% - 1px) 1px no-repeat,
+  url("../../assets/image/portal_frame_03.png") calc(100% - 1px) calc(100% - 1px) no-repeat,
+  url("../../assets/image/portal_frame_04.png") 1px calc(100% - 1px) no-repeat;
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  top:0;
+}
+
+.screen-middle > .screen-3d-banner > .screen-3d-banner-main{
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  border: 1px solid #005c80;
+  background-color: rgba(11,79,192,.25);
+  background-image: url("../../assets/image/portal_light.png"),url("../../assets/image/portal_light.png");
+  background-position: 50% top,40% bottom;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top:0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+}
+
+.screen-3d-banner .el-carousel{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.el-carousel__container{
+  width: 100%;
+  height: 100%;
+}
+
+.screen-3d-banner .el-carousel__item{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.screen-3d-banner .banner-3d-item{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.screen-3d-banner .banner-3d-item > iframe{
+  width: 100%;
+  height: 100%;
+}
+
+.el-carousel__indicators > li > .el-carousel__button  {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #fff !important;
+}
+.el-carousel__indicators > .is-active > button{
+  background: #16cce2 !important;
+  box-shadow: 0 0 20px rgba(22, 204, 226, .8) !important;
+}
+
+/*底部统计图表*/
+
+.screen-line-charts{
+  width: 100%;
+  height: 33.5%;
+  margin-top: 15px;
+}
+.screen-line-charts > ul{
+  width: 98%;
+  height: 100%;
+  margin-left: 1%;
+}
+
+.screen-line-charts > ul> li{
+  width: 49.4%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+
+.screen-line-charts > ul> li >.charts-border{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top:0;
+  z-index: 100;
+  background: url("../../assets/image/portal_frame_01.png") 1px 1px no-repeat,
+  url("../../assets/image/portal_frame_02.png") calc(100% - 1px) 1px no-repeat,
+  url("../../assets/image/portal_frame_03.png") calc(100% - 1px) 99% no-repeat,
+  url("../../assets/image/portal_frame_04.png") 1px 99% no-repeat;
+}
+
+.screen-line-charts > ul> li > .line-charts-inner{
+  position: absolute;
+  left:0;
+  top:0;
+  bottom: 0;
+  right:0;
+  margin: auto;
+  border: 1px solid #005b7e;
+  z-index: 3;
+  display: block;
+  /*width: calc(100% - 6px);
+  height: calc(100% - 6px);*/
+  background-color: rgba(11,79,192,.25);
+  background-image: url("../../assets/image/portal_light.png"),url("../../assets/image/portal_light.png");
+  background-position: 50% top,40% bottom;
+  background-repeat: no-repeat;
+}
+
+.screen-line-charts > ul> li > .charts-content{
+  width: 100%;
+  height: 96%;
+  z-index: 150;
+  position: absolute;
+  left:0;
+  top:4%;
+}
+.screen-line-charts > ul> li > .supplies-charts{
+  width: 100%;
+  height: 96%;
+  z-index: 100;
+  position: absolute;
+  left:0;
+  top:4%;
+}
+
+.screen-line-charts > ul> li:nth-child(1) {
+  margin-right: 1%;
+}
+.screen-amap-wraper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left:0;
+  top:0;
+  z-index: 0;
+  background-size: 100% 100%;
+}
+
+.screen-line-charts > ul> li > .chart-point{
+  width: 100%;
+  height: 5%;
+  position: absolute;
+  left:0;
+  top:0;
+  text-align: center;
+}
+
+.chart-point > li{
+  display: inline-block;
+  height: 100%;
+  line-height: 500%;
+}
+
+.chart-point > li> b{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: cyan;
+  border-radius: 5px;
+}
+
+.chart-point > li> span{
+  font-size: 14px;
+  color: cyan;
+  margin-left: 10px;
+}
+
+/*中间地图样式*/
+
+.screen-amap-wraper{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left:0;
+  top:0;
+}
+
+.screen-amap-wraper:before{
+  content: '';
+  display: block;
+  width:100%;
+  height:100%;
+  position: absolute;
+  left:0%;
+  top:-10%;
+  z-index: 12;
+  background: url("../../assets/image/portal_bg-min.png") no-repeat 30% 40%;
+  background-size: 100% 100%;
+}
+
+.screen-amap-wraper > .map-wraper{
+  position: absolute;
+  z-index: 10;
+  overflow: visible;
+  /*width: 70%;
+  height: 80%;
+  left:23%;
+  top:-6%;*/
+  width: 50%;
+  left:22.3%;
+  height: 80%;
+  top:-6%;
+}
+
+.screen-amap-wraper > .map-wraper > .amap-box{
+  width: 100%;
+  height: 100%;
+}
+
+.screen-amap-wraper .amap-logo{
+  display: none !important;
+}
+
+.screen-amap-wraper .amap-copyright{
+  display: none !important;
+}
+
+
+.map-wraper .infobox{
+  background: rgba(0,0,0,.8);
+  width: 143px;
+  height: auto;
+  border: 1px solid #005b7e;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.map-wraper .infobox:before{
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left:50%;
+  margin-left: -5px;
+  border: 1px solid #005b7e;
+  bottom: -5px;
+  transform: rotate(45deg);
+  background: rgba(0,0,0,.8);
+  border-left: 0;
+  border-top: 0;
+}
+
+.map-wraper .infobox > h2{
+  height: 26px;
+  line-height: 26px;
+  font-size: 15px;
+  font-weight: normal;
+  width: 117px;
+  margin-left: 13px;
+  border-bottom: 1px solid #005b7e;
+
+}
+
+.map-wraper .infobox > ul{
+  margin-top: 5px;
+}
+
+.map-wraper .infobox > ul > li{
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.marker-text{
+  font-size: 15px !important;
+}
+
+.notice{
+  position: absolute;
+  width: 30px;
+  height: 26px;
+  left: 24px;
+  top:-13px;
+  background: url(../../assets/image/sy_marker_notice.png) no-repeat;
+  background-size: contain;
+}
+
+.notice-txt{
+  line-height: 30px;
+  height: 30px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.notice-txt > b{
+  color:#ffd210;
+  font-size: 15px;
+  margin-right: 5px;
+ 
+}
+.notice-txt > span{
+  color:#fff;
+  font-size: 13px;
+}
+
+
+
+

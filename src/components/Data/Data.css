@@ -1,0 +1,101 @@
+
+
+
+.data-wraper{
+  width: 100%;
+  background: #f3f3f5;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  height: auto;
+}
+
+
+dl.charts-content{
+  width: 100%;
+  height: 304px;
+  color: #7c7c7c;
+  overflow: hidden
+}
+
+dl.charts-content > dt{
+  width: 96%;
+  height: 40px;
+  border-bottom: 1px solid #f3f3f5;
+  margin: 0 auto;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+dl.charts-content > dd{
+  width: 100%;
+  height: 263px;
+}
+
+/*污水处理量*/
+.data-wraper > .sewage-treatment > ul{
+  width: 100%;
+  height:305px;
+}
+
+.sewage-treatment > ul > li{
+  float: left;
+  height: 303px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.sewage-treatment > ul > li:nth-child(1) {
+  width: 63.4%;
+  margin:0 1%;
+}
+
+.sewage-treatment > ul > li:nth-child(2) {
+  width: 33.6%;
+}
+
+.sewage-treatment > ul > li > dl .sewage-treatment-main{
+  width: 100%;
+  height: 264px;
+}
+
+/*设备可用率/时长*/
+.equipment-info{
+  width: 100%;
+  height: 305px;
+  margin-top: 18px;
+}
+
+.equipment-info > ul{
+  width: 100%;
+  height: 305px;
+}
+
+.equipment-info > ul > li{
+  height: 303px;
+  display: inline-block;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 48.5%;
+  margin-left: 1%;
+}
+
+/*故障次数,维修分析*/
+.trouble-counts,.maintain-analysis{
+  width: 98%;
+  background: #fff;
+  margin-left: 1%;
+  height: 305px;
+  border: 1px solid #eaeaea;
+  margin-top: 18px;
+  border-radius: 10px;
+}
+
+
+.month-bar{
+  height: 263px;
+  width: 44%;
+  float: right;
+}

@@ -1,0 +1,53 @@
+#dev-monitor-main{
+    width: 100%;
+    height: calc(100% - 80px);
+    color:#3b3b3b;
+}
+#dev-monitor-main .title{
+    height: 80px;
+    width: 100%;
+    padding: 15px 20px;
+    line-height: 45px;
+}
+#dev-monitor-main .title > .title-text {
+    font-size: 18px;
+}
+#dev-monitor-main .title > .title-tools {
+    width: 30%;
+    float: right;
+}
+
+#dev-monitor-main .title >.title-tools > .el-button {
+    width:105px;
+    margin-left: 20px;
+    background: #1e8dbb;
+    color: #ffffff;
+}
+#dev-monitor-main >.title >.title-tools > .el-button:hover {
+    background: #1e8dbb;
+    color: #ffffff;
+    opacity: 0.7;
+}
+#dev-monitor-main .el-input-group__append button.el-button,
+#dev-monitor-main .el-input-group__prepend button.el-button {
+  background-color: #1e8dbb;
+  border-radius:0 4px 4px 0;
+  color: #ffffff;
+}
+
+#dev-monitor-main >.content{
+    width: calc(100% - 40px);
+    border: 1px solid #f0f2f7;
+    margin: 0 20px;
+    background: #ffffff;
+    padding:20px;
+  }
+
+  #dev-monitor-main .iconfont{
+    font-size: 18px;
+  }
+  #dev-monitor-main .cell >span{
+  margin-right: 10px;
+  cursor: pointer;
+}
+  

@@ -1,0 +1,84 @@
+#faultConfig {
+    height: calc(100% - 80px);
+    width: 100%;
+    color: #000000;
+  }
+  #faultConfig > .title {
+    height: 80px;
+    width: 100%;
+    padding: 15px 20px;
+    line-height: 45px;
+  }
+  #faultConfig > .title > .title-text {
+    font-size: 18px;
+  }
+  #faultConfig > .title > hr {
+    background: #d9d9db;
+    border: none;
+    height: 1px;
+  }
+  #faultConfig > .content {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    background: #ffffff;
+  }
+  #faultConfig > .content .title {
+    height: 80px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 45px;
+    /* font-weight: 700; */
+  }
+  #faultConfig > .content .content-datas {
+    overflow: hidden;
+  }
+  #faultConfig > .content .content-datas > .box-card {
+    width: 300px;
+    height: 160px;
+    float: left;
+    margin: 0 20px 20px 0;
+  }
+  #faultConfig > .content .content-datas > .box-card:hover {
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.3);
+  }
+  #faultConfig > .content .content-datas > .box-card > .el-card__body {
+    height: calc(100% - 53px);
+    padding: 0;
+  }
+  #faultConfig > .content .content-datas .datas-body {
+    width: 100%;
+    height: 100%;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 105px;
+    cursor: pointer;
+  }
+  .offClass {
+    background: #d9d9db;
+  }
+  
+  #faultConfig .el-dialog > .el-dialog__body {
+    padding: 15px 20px 0 20px;
+  }
+  #faultConfig .el-dialog > .el-dialog__body .el-row {
+    margin-bottom: 15px;
+    line-height: 40px;
+  }
+  #faultConfig .el-dialog > .el-dialog__body label {
+    display: inline-block;
+    width: 100%;
+    padding-right: 10px;
+    text-align: right;
+    font-weight: bold;
+  }
+  #faultConfig .el-dialog > .el-dialog__body .el-select {
+    width: 100%;
+  }
+  #faultConfig .el-dialog > .el-dialog__footer {
+    padding: 0 30px 15px;
+  }
+  #faultConfig .el-dialog > .el-dialog__footer > .dialog-footer {
+    padding: 20px 0;
+    border-top: 1px solid #d9d9db;
+  }

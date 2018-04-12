@@ -1,0 +1,56 @@
+#village {
+    height: calc(100% - 80px);
+    width: 100%;
+    background: #ffffff;
+    color: #3b3b3b;
+  }
+  #village .title {
+    height: 80px;
+    width: 100%;
+    padding: 15px 20px;
+    line-height: 45px;
+  }
+  #village .title > .title-text {
+    font-size: 18px;
+  }
+  #village .title > .title-tools {
+    width: 30%;
+    float: right;
+  }
+  #village >.title >.title-tools >.el-input-group {
+    width: calc(100% - 130px);
+  }
+  #village >.title >.title-tools > .el-button {
+    width:105px;
+    margin-left: 20px;
+    background: #1e8dbb;
+    color: #ffffff;
+  }
+  #village >.title >.title-tools > .el-button:hover {
+    background: #1e8dbb;
+    color: #ffffff;
+    opacity: 0.7;
+  }
+  #village .el-input-group__append button.el-button,
+  #village .el-input-group__prepend button.el-button {
+    background-color: #1e8dbb;
+    border-radius:0 4px 4px 0;
+    color: #ffffff;
+  }
+  #village >.content{
+    width: calc(100% - 40px);
+    border: 1px solid #f0f2f7;
+    margin: 0 20px;
+    background: #ffffff;
+    padding:20px;
+  }
+  #village .iconfont{
+    font-size: 18px;
+  }
+  #village .cell >span{
+  margin-right: 10px;
+  cursor: pointer;
+}
+.el-pagination.is-background .el-pager li.active{
+  background: #1E8DBB;
+}

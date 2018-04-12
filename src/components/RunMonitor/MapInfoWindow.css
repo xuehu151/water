@@ -1,0 +1,91 @@
+#myMap .infoBox {
+  /* width: 188px; */
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+
+#myMap .infoBox>.infoBox-title {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  color: #ffffff;
+  border-radius: 5px 5px 0 0;
+}
+
+#myMap .redTitle {
+  background: #f35f5b;
+}
+
+#myMap .greenTitle {
+  background: #8dbd71;
+}
+
+#myMap .grayTitle {
+  background: #9c9c9c;
+}
+
+#myMap .infoBox>.infoBox-content {
+  padding: 5px;
+  background: #ffffff;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid #e4e6ec;
+}
+
+#myMap .infoBox>.infoBox-content>.content-main>label {
+  width: 100%;
+  height: 25px;
+  line-height: 26px;
+  display: inline-block;
+}
+
+#myMap .infoBox>.infoBox-content>.content-faults>.faults-info {
+  line-height: 25px;
+}
+
+#myMap .infoBox>.infoBox-content>.content-faults>.faults-info>img,
+#myMap .infoBox>.infoBox-content>.content-faults>.faults-info>label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#myMap .infoBox>.infoBox-content>.content-tools {
+  width: 100%;
+  height: 25px;
+  padding: 5px;
+  border-top: 1px solid #e4e6ec;
+}
+
+#myMap .infoBox>.infoBox-content>.content-tools>span {
+  width: 22%;
+  border-right: 1px solid #e4e6ec;
+  cursor: pointer;
+}
+
+#myMap .infoBox>.infoBox-content>.content-tools>span:last-child {
+  border: none;
+}
+#myMap .infoBox::before {
+  display: block;
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  bottom: -12px;
+  left: calc(50% - 5px);
+  border-top: 12px solid #e4e6ec;
+  border-right: 9px solid transparent;
+  border-left: 9px solid transparent;
+}
+#myMap .infoBox::after {
+  display: block;
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 4px);
+  border-top: 11px solid #ffffff;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}

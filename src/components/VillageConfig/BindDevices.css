@@ -1,0 +1,111 @@
+#bingDevices {
+    width: 100%;
+    height: calc(100% - 80px);
+    background: #ffffff;
+    padding: 20px;
+    color: black;
+  }
+  #bingDevices > .content {
+    background: #ffffff;
+    height: calc(100% - 60px);
+    border: 1px solid #ebeef5;
+    padding: 10px 20px;
+  }
+  #bingDevices > .content > .content-selected > .selected-title,
+  #bingDevices > .content > .content-all > .all-title {
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+  }
+  #bingDevices > .content > .content-selected > .selected-title > .iconfont,
+  #bingDevices > .content > .content-all > .all-title > .iconfont {
+    color: #208cbb;
+    margin-right: 5px;
+  }
+  #bingDevices > .content > .content-all > .all-title > .el-input-group {
+    width: 20%;
+    float: right;
+  }
+  #bingDevices > .content > .content-selected > .selected-content {
+    padding: 0 20px 20px 20px;
+    border-bottom: #ebeef5 1px solid;
+    margin-bottom: 10px;
+  }
+  #bingDevices
+    > .content
+    > .content-selected
+    > .selected-content
+    > .content-devices {
+    overflow: hidden;
+    min-height: 40px;
+    margin: 20px 0;
+  }
+  #bingDevices
+    > .content
+    > .content-selected
+    > .selected-content
+    > .content-devices
+    > .devices-checked {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    background: #208cbb;
+    float: left;
+    margin-right: 15px;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  #bingDevices
+    > .content
+    > .content-selected
+    > .selected-content
+    > .content-devices
+    > .devices-checked:hover {
+    opacity: 0.7;
+  }
+  #bingDevices
+    > .content
+    > .content-selected
+    > .selected-content
+    > .content-devices
+    > .devices-checked
+    > i {
+    float: right;
+    margin-right: 5px;
+  }
+  #bingDevices
+    > .content
+    > .content-selected
+    > .selected-content
+    > .selected-footer {
+    margin: auto;
+    width: 16%;
+  }
+  #bingDevices > .content > .content-all > .all-tools {
+    margin-left: calc(50% - 250px);
+  }
+  #bingDevices > .content > .content-all > .all-devices {
+    padding-left: 20px;
+    margin: 20px 0;
+  }
+  #bingDevices > .content > .content-all > .all-devices .el-checkbox.is-bordered,
+  #bingDevices
+    > .content
+    > .content-all
+    > .all-devices
+    .el-checkbox.is-bordered
+    + .el-checkbox.is-bordered {
+    width: 180px;
+    margin: 0 20px 15px 0;
+  }
+  #bingDevices .el-checkbox__input.is-checked .el-checkbox__inner,
+  .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: #208cbb;
+    border-color: #208cbb;
+  }
+  #bingDevices .el-checkbox__input.is-checked + .el-checkbox__label {
+    color: #208cbb;
+  }
